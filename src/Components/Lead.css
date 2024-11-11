@@ -1,0 +1,237 @@
+/* Overall Lead Dashboard Styling */
+.lead-dashboard {
+  padding: 20px;
+  background-color: #f4f4f4;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  max-width: 1200px;
+  margin: 0 auto;
+ 
+}
+
+/* Title Styling */
+.lead-dashboard h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #2a9d8f;
+  margin-bottom: 20px;
+}
+
+/* Horizontal Stepper for Lead Progress */
+.horizontal-stepper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  padding: 10px 0;
+}
+
+.step {
+  flex: 1;
+  text-align: center;
+  padding: 15px 0;
+  background-color: #e9ecef;
+  border-radius: 5px;
+  margin: 0 5px;
+  font-weight: bold;
+  color: #0077b6;
+  transition: background-color 0.3s ease;
+}
+
+.step:hover {
+  background-color: #90e0ef;
+  cursor: pointer;
+}
+
+/* Add New Lead Button */
+.lead-actions {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.new-lead-btn {
+  background-color: #2a9d8f;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.new-lead-btn:hover {
+  background-color: #21867a;
+}
+
+/* Lead Form Container */
+.lead-form-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.lead-form-container h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.lead-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.submit-btn {
+  background-color: #2a9d8f;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #21867a;
+}
+
+/* Lead Sections Styling */
+.lead-sections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.lead-section {
+  background-color: white;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  
+  max-width: calc(33.333% - 20px);
+}
+
+.lead-section h2 {
+  font-size: 1.2rem;
+  color: #0077b6;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Lead Item Styling */
+.lead-item {
+  background-color: #f4faff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.lead-item:hover {
+  background-color: #d6f5ff;
+}
+
+.lead-item p {
+  margin: 0;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+/* Forward Button */
+.forward-btn {
+  background-color: #f77f00;
+  border: none;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.forward-btn:hover {
+  background-color: #d65a00;
+}
+
+/* Dropdown for selecting the next section */
+select {
+  padding: 5px;
+  margin-left: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* No Leads Placeholder Text */
+.lead-section p {
+  text-align: center;
+  color: #000000;
+  font-style: bold;
+  font-size: 15px;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  width: 400px;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+.close {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+}
+
+
+/* Responsive Styling */
+@media (max-width: 1024px) {
+  .lead-section {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .lead-section {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .horizontal-stepper {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .step {
+    margin: 5px 0;
+  }
+}
