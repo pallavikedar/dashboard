@@ -68,7 +68,7 @@ const Drawer = ({ open, toggleDrawer }) => {
     <DrawerWrapper open={open}>
       <DrawerContent>
         <LogoWrapper>
-         <h1 style={{color:"#2a9d8f"}}>Royaalmede</h1>
+         <h1 style={{color:"#2a9d8f"}}>Demo</h1>
           <Div>
             <GiCancel
               style={{ color: "#666", cursor: "pointer" }}
